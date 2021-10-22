@@ -1,0 +1,106 @@
+.header {
+    border-bottom: 1px double #ECECEC;
+}
+.header-container {
+    display: flex;
+    align-items: center; 
+}
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-item {
+    display: inline-flex;
+}
+
+.header-list-tel {
+    display: flex;
+    align-items: center;
+    margin-left:auto;
+}
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color:var(--accent-color);
+}
+.logo-head {
+    color: #000;
+}
+.header-link {
+    display: block;
+    align-items: center;
+    position: relative;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color:var(--primary-title-color);
+}
+.header-link:active,
+.header-link:hover, 
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-tel {
+    margin-right: 10px;
+    fill: var(--secondary-title-color);
+}
+
+.header-tel-link {
+    display: block;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color:var(--secondary-title-color);
+    margin-left: 10px;
+}
+.header-tel-link:hover, 
+.header-tel-link:focus {
+    color: var(--accent-color);
+}
+.header-tel-link:hover .header-tel, 
+.header-tel-link:focus .header-tel {
+    fill: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    display: block;
+    bottom: -33px;
+}
