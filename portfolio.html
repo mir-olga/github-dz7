@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+      <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -256,9 +257,9 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+     <footer class="footer">
       <div class="footer-flex container">
-        <div >
+        <div>
           <a href="index.html" class="footer-logo-link logo link"
             >Web<span class="logo-footer">Studio</span>
           </a>
@@ -270,13 +271,16 @@
               >
             </li>
             <li class="footer-list">
-              <a href="mailto:info@example.com" class="footer-tel footer-link link"
+              <a
+                href="mailto:info@example.com"
+                class="footer-tel footer-link link"
                 >info@example.com</a
               >
             </li>
             <li class="footer-list">
               <a href="tel:+380991111111" class="footer-tel footer-link link"
-                >+38 099 111 11 11</a>
+                >+38 099 111 11 11</a
+              >
             </li>
           </ul>
         </div>
@@ -316,6 +320,29 @@
           </ul>
         </div>
 
+        <div class="footer-form-div">
+          <p class="footer-add">Подпишитесь на рассылку</p>
+
+          <div class="footer-form-email">
+            <form action="#" class="footer-form">
+              <div class="footer-input">
+                <input
+                  type="email"
+                  name="footer-user-email"
+                  id="footer-user-email"
+                  placeholder="E-mail"
+                />
+              </div>
+
+              <button type="submit" class="button subscribe-btn">
+                Подписаться
+                <svg class="icon-send">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
