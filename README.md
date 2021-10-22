@@ -1,1 +1,1 @@
-# girhub-dz7
+# github-dz7
