@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header header-bottom">
       <div class="header-container container">
         <nav class="header-navigation">
           <a href="index.html" class="logo link"
@@ -39,7 +39,7 @@
           </ul>
         </nav>
 
-        <ul class="header-contacts list">
+        <ul class="header-contacts header-contacts__right list">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__data link">
               <svg class="header-contacts__icon" width="16px" height="12px">
@@ -78,7 +78,7 @@
 
           <ul class="benefits-list list">
             <li class="benefits-list__item">
-              <div class="benefits-window">
+              <div class="benefits-list__window benefits-window ">
                 <svg class="benefits-window__icon">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
@@ -447,33 +447,33 @@
         </div>
 
         <div class="footer-join">
-          <p class="footer-join__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <p class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</p>
 
           <ul class="social-list social-list_margin-top list">
             <li class="social-list__item">
-              <a href="" class="footer-social-link social-list__link link">
-                <svg class="footer-social-icon social-list__icon">
+              <a href="" class="social-list__link_grey social-list__link link">
+                <svg class="social-list__icon_white social-list__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="footer-social-link social-list__link link">
-                <svg class="footer-social-icon social-list__icon">
+              <a href="" class="social-list__link_grey social-list__link link">
+                <svg class="social-list__icon_white social-list__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="footer-social-link social-list__link link">
-                <svg class="footer-social-icon social-list__icon">
+              <a href="" class="social-list__link_grey social-list__link link">
+                <svg class="social-list__icon_white social-list__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="footer-social-link social-list__link link">
-                <svg class="footer-social-icon social-list__icon">
+              <a href="" class="social-list__link_grey social-list__link link">
+                <svg class="social-list__icon_white social-list__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -481,12 +481,12 @@
           </ul>
         </div>
 
-        <div class="footer-form-div">
-          <p class="footer-add">Подпишитесь на рассылку</p>
+        <div class="footer-sign">
+          <p class="footer__title">Подпишитесь на рассылку</p>
 
-          <div class="footer-form-email">
+          <div class="footer-form-container">
             <form action="#" class="footer-form">
-              <div class="footer-input">
+              <div class="footer-form__input">
                 <input
                   type="email"
                   name="footer-user-email"
@@ -495,9 +495,9 @@
                 />
               </div>
 
-              <button type="submit" class="button subscribe-btn">
+              <button type="submit" class="footer-form__button button">
                 Подписаться
-                <svg class="icon-send">
+                <svg class="footer-form__icon">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>

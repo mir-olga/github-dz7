@@ -1,4 +1,4 @@
-.header {
+.header-bottom {
   border-bottom: 1px double #ececec;
 }
 
@@ -41,7 +41,7 @@
   }
 }
 
-.header-contacts {
+.header-contacts__right {
   @extend %align-items;
   margin-left: auto;
 }
