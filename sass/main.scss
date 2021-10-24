@@ -1,5 +1,7 @@
 @import "./utils/vars";
 @import "./utils/hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 @import "./base/common";
 @import "./base/reset";
@@ -17,7 +19,11 @@
 
 @import "./components/container";
 @import "./components/section";
+@import "./components/logo";
+@import "./components/section-tittle";
 @import "./components/social";
 @import "./components/backdrop";
 @import "./components/modal";
 @import "./components/modal-form";
+@import "./components/current";
+@import "./components/button";

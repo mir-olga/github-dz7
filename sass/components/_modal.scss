@@ -29,8 +29,7 @@
   fill: #000;
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 
   .close-btn:hover &,
   .close-btn:focus & {
@@ -42,9 +41,7 @@
 .modal-title {
   margin-bottom: 20px;
   text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  letter-spacing: 0.03em;
+
+  @include font(20px, bold, 23px, 0.03em);
   color: var(--primary-title-color);
 }

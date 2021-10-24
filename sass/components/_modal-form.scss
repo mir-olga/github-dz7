@@ -5,9 +5,7 @@
   display: block;
   margin-bottom: 4px;
 
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(12px, normal, 14px, 0.01em);
   color: var(--secondary-title-color);
 }
 .input-wrapper {
@@ -25,8 +23,7 @@
   outline: none;
 
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 
   &:focus {
     border-color: var(--accent-color);
@@ -46,8 +43,7 @@
   fill: var(--primary-title-color);
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 }
 .modal-text-input {
   width: 100%;
@@ -60,13 +56,10 @@
   outline: none;
 
   color: var(--primary-modal-color);
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(12px, normal, 14px, 0.01em);
 
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 
   &:focus {
     border-color: var(--accent-color);
@@ -90,14 +83,11 @@
   align-items: center;
   padding: 9px;
 
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(14px, normal, 24px, 0.03em);
   color: var(--secondary-title-color);
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 }
 .check-span {
   width: 16px;
@@ -105,13 +95,11 @@
   border: 2px solid var(--primary-title-color);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
+  @extend %align-items;
   justify-content: center;
 
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 
   &:hover {
     border: 2px solid var(--accent-color);

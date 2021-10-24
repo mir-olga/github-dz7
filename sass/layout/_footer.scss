@@ -8,61 +8,50 @@
   display: flex;
   align-items: baseline;
 }
-.footer-flex-item {
-  margin-left: 70px;
-}
-.footer-logo-link {
-  display: block;
-}
-.logo-footer {
-  color: #ffffff;
-}
-.footer-list:not(:last-child) {
+
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 5px;
 }
-.footer-link {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 
+.footer-contacts__link {
+  @include font(14px, normal, 24px, 0.03em);
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-}
-.footer-address {
+
+.footer-contacts__address {
   color: #ffffff;
 }
-.footer-tel {
+
+.footer-contacts__data {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-add {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
+
+.footer-join {
+  margin-left: 70px;
+}
+
+.footer-join__title {
+  @include font(14px, bold, 16px, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
 }
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+
 .footer-social-link {
   background-color: #44454e;
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-description;
 }
 .footer-social-icon {
   fill: #fff;
 }
+
 .footer-form-div {
   margin-left: auto;
   margin-right: 0;
@@ -77,20 +66,19 @@
 }
 .footer-input {
   display: flex;
-}
-.footer-input input {
-  padding: 15px 15px;
-  height: 50px;
-  width: 360px;
-  border-radius: 4px;
-  border: 1px solid var(--secondary-title-color);
-  background: transparent; /*прозрачный*/
-  outline: none;
 
-  color: var(--secondary-title-color);
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
+  & input {
+    padding: 15px 15px;
+    height: 50px;
+    width: 360px;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-title-color);
+    background: transparent; /*прозрачный*/
+    outline: none;
+
+    color: var(--secondary-title-color);
+    @include font(16px, normal, 20px, 0.03em);
+  }
 }
 
 .subscribe-btn {
